@@ -1,34 +1,52 @@
 body {
     margin:0;
-  }
-  .header {
+}
+.header {
     box-sizing:border-box;
     width: 100%;
     position:sticky;
       top:0;
-  }
-    .first-header {
+}
+.first-header {
       background-color: #004785;
       color: white;
       padding: 10px;
       
-    }
-    .social a {
+}
+
+.social a {
       padding: 5px;
-    }
+}
 
 .phone-number {
   font-size: 1.2rem;
 }
 
-    .full-day {
+.full-day {
       position: relative;
       bottom: 10px;
-    }
+}
 
-    .second-header {
+.second-header {
       box-sizing:1rem;
       background-color: white;
-      color:#333;
       font-size: 1.3rem;
-    }
+}
+
+.second-header a {
+    text-decoration:none;
+    color:#333;
+}
+
+.main-menue{
+        background-color:#fff;
+}
+
+.main-image {
+    vertical-align: middle;
+    max-width: 480px;
+}
+
+.deposit-calculator input {
+    background-color: 
+}
