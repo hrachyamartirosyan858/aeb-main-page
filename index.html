@@ -65,13 +65,58 @@
         </div>
       </div>
         <div class="second-header">
-          <div>AEB Mobile</div>
-          <div>AEB Online</div>
-          <div>My Transfer</div>
-          <div>APPA Insurance</div>
+          <a href="https://aeb.am/en/mobile_banking/"><div>AEB Mobile</div></a>
+          <a href="https://accounts.aeb.am/auth/realms/aeb/protocol/openid-connect/auth?client_id=web&redirect_uri=https%3A%2F%2Fnewonline.aeb.am%2F&state=f14a5ba3-06f7-4df4-96a4-62527e62294a&response_mode=fragment&response_type=code&scope=openid&nonce=a6801d0f-bc22-422b-8cad-9e8747c855c6"><div>AEB Online</div></a>
+          <a href="https://aeb.am/hy/1102/"><div>My Transfer</div></a>
+          <a href="https://insurance.aeb.am/"><div>APPA Insurance</div></a>
         </div>
       </header>
       
-      <main><h3>News</h3><img src="pix/5084.jpg" alt=""></main>
-</body>
+      <main class="main-menue">
+        <h3>News</h3>
+        <a href="https://aeb.am/en/1117/"><img class="main-image" src="pix/5084.jpg" alt="all news image"></a>
+      
+        <a href="https://aeb.am/en/1116/"><img class="main-image" src="pix/5064.jpg" alt="image of news about visa infinite card"></a>
+      
+        <a href="https://aeb.am/en/1115/"><img class="main-image" src="pix/5054.jpg" alt="image of news about ria money"></a>
+      </main>
+    <div class="deposit-calculator">
+      <div>Deposit Calculator</div>
+      <div>Deposit type <select name="deposit-type" id="deposit-type">
+        <option value="classic">Classic</option>
+        <option value="child">Child</option>
+        <option value="beneficial">Beneficial</option>
+      </select></div>
+      <div>Amount <input type="text"><select name="deposit-currency" id="deposit-currency">
+        <option value="Currency">Currency</option>
+        <option value="AMD">AMD</option>
+        <option value="USD">USD</option>
+      </select></div>
+      <div>Term(day) <input type="text"></div>
+      <div>Payment methods <select name="deposit-period" id="deposit-period">
+        <option value="at-the-end-of-the-term">At the end of the term</option>
+        <option value="monthly">Monthly</option>
+        <option value="quarter">Quarter</option>
+      </select></div>
+      <div>Interest rate (%) <input type="text"></div>
+      <div class="calculate-button">CALCULATE</div>
+    </div>
+    <div class="loan-calculator">
+      <div>Loan Calculator</div>
+      <div>Loan type <input type="text"></div>
+      <div>Amount <input type="text"> <select name="loan-currency" id="loan-currency">
+        <option value="Currency">Currency</option>
+        <option value="AMD">AMD</option>
+        <option value="USD">USD</option>
+      </select> </div>
+      <div>Loan term <input type="radio">day <input type="radio">month <input type="radio">year <input type="text"></div>
+      <div>Loan rate <input type="text"></div>
+      <div>Redemption type <select name="graf-type" id="graf-type">
+        <option value="non-equally">non-equally</option>
+        <option value="equally">equally</option>
+      </select></div>
+      <div class="calculate-button">CALCULATE</div>
+    </div>
+    
+  </body>
 </html>
