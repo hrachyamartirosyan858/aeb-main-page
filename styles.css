@@ -7,6 +7,14 @@ body {
     position:sticky;
       top:0;
 }
+
+.header-menue h3{
+    font: bold 15px "Segoe UI";
+    padding-left: 20px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
 .first-header {
       background-color: #004785;
       color: white;
@@ -15,7 +23,8 @@ body {
 }
 
 .social a {
-      padding: 5px;
+      padding: 10px;
+      text-align:center;
 }
 
 .phone-number {
@@ -47,6 +56,62 @@ body {
     max-width: 480px;
 }
 
-.deposit-calculator input {
+/* .deposit-calculator input {
     background-color: 
+} */
+
+.pre-footer a {
+    text-decoration:none;
+    color:#333;
+    
+}
+
+.pre-footer div {
+    background-color:#ddd;
+    border-radius: 8px;
+    display:inline-block;
+    padding: 8px 8px;
+    margin: 15px 5px;
+}
+
+.first-footer{
+  background-color:#0F1923; 
+}
+
+.first-footer a, .first-footer{
+    color:#B7BABD;
+    text-decoration:none;
+}
+
+.second-footer{
+    width: 100%;
+    display: inline-block;
+    color:#B7BABD;
+    background-color: #17212a;
+}
+
+.second-footer a{
+    color:#B7BABD;
+    text-decoration:none;
+}
+
+@media screen and (min-width: 480px){
+
+    .first-header{
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .header-menue{
+        display:flex;
+        flex: 1 0 auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center;
+    }
+    
+    .social{
+        display: flex;
+        align-items:center;
+    }
 }
