@@ -8,19 +8,52 @@ body {
       top:0;
 }
 
-.header-menue h3{
-    font: bold 15px "Segoe UI";
-    padding-left: 20px;
-    padding-top:10px;
-    padding-bottom:10px;
+.aeb-logo{
+    width: 64px;
+    margin-left: 10px;
 }
 
+.hamburger-logo{
+    padding-right: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.header-menue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: 13px "Segoe UI";
+    padding-top:5px;
+    padding-bottom:5px;
+    width: 100%;
+    height: 24px;
+}
+.hamburger-and-logo{
+    display: flex;
+}
 .first-header {
       background-color: #004785;
       color: white;
-      padding: 10px;
-      
+      padding: 10px;  
 }
+
+.language{
+display: flex;
+align-items:center;
+}
+
+.language span {
+text-transform: uppercase;
+padding:7px;
+}
+
+.search-logo {
+    width: 18px;
+    height: 18px;
+    padding: 5px;
+}
+
 
 .social a {
       padding: 10px;
@@ -53,7 +86,7 @@ body {
 
 .main-image {
     vertical-align: middle;
-    max-width: 480px;
+    max-width: 360px;
 }
 
 /* .deposit-calculator input {
