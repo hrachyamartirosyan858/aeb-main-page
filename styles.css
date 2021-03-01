@@ -1,11 +1,18 @@
+*{
+    box-sizing: border-box;
+}
 body {
     margin:0;
+    font-family: "Segoe UI";
 }
+
+
 .header {
     box-sizing:border-box;
     width: 100%;
     position:sticky;
       top:0;
+    box-shadow: 0px 0.5px 25px #e2dfdf;
 }
 
 .aeb-logo{
@@ -48,12 +55,575 @@ text-transform: uppercase;
 padding:7px;
 }
 
+.mobile_ad {
+    width: 100%;
+    padding-top: 24px;
+}
+
+.news{
+    text-align:center;
+    font-family:"Segoe UI Semibold"
+}
+
+.calendar_image_wrapper {
+        display: flex;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+.calendar_image{
+    width: 100%;
+    height: 163px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.people_gadering_image {
+    display: block;
+    object-fit: cover;
+    object-position: top;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.branch_list{
+    text-align:start;
+    font-family:"Segoe UI Semibold";
+    margin:10px;
+    font-size:inherit;
+}
+
+.shareholders_meeting_text{
+    text-align:start;
+    font-family:"Segoe UI Semibold";
+    margin:10px;
+    font-size:inherit;
+}
+
+.shareholders_meeting_link{
+    text-decoration: none;
+    color: black;
+}
+.all_news_text{
+    text-align:center;
+    font-family:"Segoe UI Semibold";
+    color: #626161;
+}
+
+.all_news_link{
+    text-decoration: none;
+}
+
+.deposit-calculator__header {
+    text-align: center;
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+}
+
+.deposit-calculator-form__type{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.deposit-calculator__form{
+    font-family: "Segoe UI";
+    padding-right:15px;
+    padding-left:15px;
+}
+
+.deposit-calculator-form__type-label{
+    text-align:right;
+    color:#595959;
+    margin-right: 16px;
+    font-size: 16px;
+}
+
+.deposit-calculator-form__type-select{
+    -webkit-appearance: none;
+    appearance: none;
+    color: #7f7f7f;
+    line-height: 2.8;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 38px;
+}
+
+.deposit-calculator-form__type::after{
+    content: "";
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(
+45deg
+);
+    -webkit-transform: rotate(
+45deg
+);
+    position: absolute;
+    right: 15px;
+    top: 38px;
+}
+
+.deposit-currency-form__type-label{
+    display: block;
+    text-align: right;
+    color: #595959;
+    margin-right: 16px;
+    font-size: 15px;
+}
+
+.deposit-currency-form__type-div{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 38px;
+}
+
+.deposit-currency-form_type-text{
+    color: #7f7f7f;
+    line-height: 2.8;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+ }
+
+.deposit-currency-form_type-select{
+    -webkit-appearance: none;
+    appearance: none;
+    color: #7f7f7f;
+    line-height: 2.8;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-left: 26px;
+}
+
+.deposit-currency-form_type{
+    position: relative;
+}
+
+.deposit-currency-form_type::after{
+    content: "";
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(
+45deg
+);
+    -webkit-transform: rotate(
+45deg
+);
+    position: absolute;
+    right: 15px;
+    top: 32px;
+}
+
+.deposit-term__type-label{
+    display: block;
+    text-align: right;
+    color: #595959;
+    margin-right: 16px;
+    font-size: 15px;
+}
+
+.deposit-term__type-input{
+    width: 100%;
+    color: #7f7f7f;
+    line-height: 2.8;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 38px;
+}
+
+.deposit-payment__type-label{
+    display: block;
+    text-align: right;
+    color: #595959;
+    margin-right: 16px;
+    font-size: 15px;
+}
+
+.deposit-payment__type-select{
+    width:100%;
+    -webkit-appearance: none;
+    appearance: none;
+    color: #7f7f7f;
+    line-height: 2.8;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 38px;
+}
+
+.deposit-interest-rate__type-label{
+    display: block;
+    text-align: right;
+    color: #595959;
+    margin-right: 16px;
+    font-size: 15px;   
+}
+
+.deposit-interest-rate__type-input{
+    width:100%;
+    -webkit-appearance: none;
+    appearance: none;
+    color: #7f7f7f;
+    line-height: 2.8;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 30px;    
+}
+
+.deposit-calculate__type-button{
+    width: 100%;
+    color: #fff;
+    background-color: #81c31a;
+    line-height: 2.8;
+    font-family: "Segoe UI Semibold";
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.loan-calculator__form{
+    font-family: "Segoe UI";
+    padding-right:15px;
+    padding-left:15px;
+}
+
+.loan-calculator-header{
+    text-align: center;
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+}
+
+.loan-type__type-label{
+    display: block;
+    text-align: right;
+    color: #595959;
+    margin-right: 16px;
+    font-size: 15px;
+}
+
+.loan-type__type-select{
+    width:100%;
+    -webkit-appearance: none;
+    appearance: none;
+    color: #7f7f7f;
+    line-height: 2.8;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 30px; 
+}
+
+.loan-calculator-amount__type-label{
+    display: block;
+    text-align: right;
+    color: #595959;
+    margin-right: 16px;
+    font-size: 15px;
+}
+
+.loan-currency-form__type-div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 38px;
+}
+
+.loan-currency-form__type-text {
+    color: #7f7f7f;
+    line-height: 2.8;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.loan-currency-form_type-select {
+    -webkit-appearance: none;
+    appearance: none;
+    color: #7f7f7f;
+    line-height: 2.8;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-left: 26px;
+}
+
+.loan-calculator-term__type-label {
+    display: block;
+    text-align: right;
+    color: #595959;
+    margin-right: 16px;
+    font-size: 15px;
+}
+
+.loan-calculator-term__type-fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.loan-term-day__type-input{
+    margin-left: 0px;
+    margin-bottom: 5px;
+}
+
+.loan-term-day__type-label, .loan-term-month__type-label {
+    margin-bottom: 16px;
+}
+
+.loan-term-year__type-label{
+    margin-bottom: 3px;
+}
+
+.loan-term-period__type-input{
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    color: #7f7f7f;
+    line-height: 2.8;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.loan-rate__type-label{
+    display: block;
+    text-align: right;
+    color: #595959;
+    margin-right: 16px;
+    font-size: 15px;
+}
+
+.loan-rate__type-input{
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    color: #7f7f7f;
+    line-height: 2.8;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.redemption-type__type-label{
+    display: block;
+    text-align: right;
+    color: #595959;
+    margin-right: 16px;
+    font-size: 15px;
+} 
+
+.redemption-type__type-select{
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    color: #7f7f7f;
+    line-height: 2.8;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.loan-calculate__type-button{
+    width: 100%;
+    color: #fff;
+    background-color: #81c31a;
+    line-height: 2.8;
+    font-family: "Segoe UI Semibold";
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.exchange-rate{
+    display: flex;
+    flex-direction: column;
+}
+
+.exchange-rate__header {
+    padding-left: 15px;
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.exchange-rate__header:after{
+    content: "";
+    background-color: #81c31a;
+    display: block;
+    height: 3px;
+    width: 31px;
+    margin-top: 7px;
+}
+
+.exchange-rate__options{
+    font-family: "Segoe UI Semibold";
+    font-size: 14px;
+    font-weight: 600;
+    color: #6d6d6d;
+    background-color: white;
+    margin-left: 15px;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+    margin-right: 15px;
+    padding-bottom: 9px;
+    
+}
+
+.exchange-rate__table {
+    margin-right: 15px;
+    margin-left: 15px;
+    color: #333;
+    font-size: 13px;
+}
+
+.exchange-rate__table-header{
+    font-size: 13px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    padding-top: 12px;
+}
+
+.exchange-rate-currency {
+    font-size:12px;
+    line-height: 27px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    margin-right: 13px;
+}
+
+.exchange-rate-currency__first-column{
+    padding-right: 20px;
+}
+
+.calculator-button{
+    text-align: center;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.calculator-button button{
+    background-color: white;
+    color: #333;
+    height: 50px;
+    width: 160px;
+    border: 1.6px solid #f3f3f3;
+    border-radius: 5px;
+}
+
+.calculator-button label{
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #666;    
+}
+.calculator-button svg path {
+    fill:#81c31a;
+}
+
+.google-map-suround{
+    padding:15px;
+    padding-bottom: 4px;
+    background-color:#f3f3f3;
+}
+
+.google-map-object-selector-div{
+   background-color: white; 
+   display: grid;
+   grid-template-columns: 1fr 5fr;
+   padding:10px;
+   margin-bottom: 5px;
+}
+
+.google-map-branch{
+    width: 25px;
+    height: auto;
+}
+
+.google-map-object-selector{
+    border:none;
+    background-color: white;
+    color:#666;
+    font-family:"Segoe UI";
+    font-size: 15px;
+}
+
+.google-map{
+    width:100%
+}
+
+.google-map-updated-day{
+    color:#a1a0a0;
+    font-size: 12px;
+    line-height: 97px;
+    text-align: center;
+}
+
+
+
 .search-logo {
     width: 18px;
     height: 18px;
     padding: 5px;
 }
 
+
+.youtube-ad {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #e8e8e8;
+}
+
+.youtube-ad__iframe {
+    height: 177px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    background: linear-gradient(
+180deg
+, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 79%, rgba(76,75,75,1) 100%);
+}
 
 .social a {
       padding: 10px;
@@ -82,6 +652,8 @@ padding:7px;
 
 .main-menue{
         background-color:#fff;
+        display:flex;
+        flex-direction: column;
 }
 
 .main-image {
@@ -92,6 +664,11 @@ padding:7px;
 /* .deposit-calculator input {
     background-color: 
 } */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
 
 .pre-footer a {
     text-decoration:none;
@@ -109,6 +686,27 @@ padding:7px;
 
 .first-footer{
   background-color:#0F1923; 
+  text-align: center;
+  position: relative;
+}
+
+.first-footer svg{
+    margin: 15px;
+}
+
+.first-footer-svg-after{
+    position:absolute;
+    bottom:15px;
+    left: 127px;
+}
+
+.first-footer-svg-after:after{
+    content: "";
+    background-color: #81c31a;
+    display: block;
+    height: 3px;
+    width: 105px;
+    margin-top: 7px;
 }
 
 .first-footer a, .first-footer{
@@ -118,9 +716,23 @@ padding:7px;
 
 .second-footer{
     width: 100%;
-    display: inline-block;
     color:#B7BABD;
     background-color: #17212a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-footer__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-footer__links h3{
+    font-size: 14px;
 }
 
 .second-footer a{
@@ -128,23 +740,50 @@ padding:7px;
     text-decoration:none;
 }
 
-@media screen and (min-width: 480px){
-
-    .first-header{
-        display:grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    .header-menue{
-        display:flex;
-        flex: 1 0 auto;
-        flex-direction: row;
-        align-items: center;
-        justify-content:center;
-    }
-    
-    .social{
-        display: flex;
-        align-items:center;
-    }
+.abcfinance-img{
+    width: 40px;
 }
+
+/* .second-footer__links-text{
+    font-size: 10px;
+} */
+
+.useful-references{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 21px 26px 26px;
+    font-size: 12px;
+    align-items: center;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+    margin-left: -40px;
+}
+
+.useful-references__links{
+    justify-self: center;
+}
+
+.last-text{
+    font-size: 10px;
+    margin: 15px;
+    text-align: center;
+    line-height: 2;
+    display:flex;
+    flex-direction: column;
+}
+
+.zoomgraphics-svg{
+    transform:scale(0.8);
+}
+
+.copyright{
+    font-size: 11px;
+    font-weight: 600;
+    color:rgba(255,255,255,0.8);
+    text-align: center;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+    line-height: 20px;
+    margin-top: 15px;
+}
+
