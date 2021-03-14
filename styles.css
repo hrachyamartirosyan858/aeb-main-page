@@ -39,11 +39,15 @@ body {
 .hamburger-and-logo{
     display: flex;
 }
+
 .first-header {
-      background-color: #004785;
-      color: white;
-      padding: 10px;  
+    display: flex;
+    align-items: center;
+    background-color: #004785;
+    color: white;
+    padding: 10px;  
 }
+
 
 .language{
 display: flex;
@@ -55,9 +59,13 @@ text-transform: uppercase;
 padding:7px;
 }
 
-.mobile_ad {
-    width: 100%;
-    padding-top: 24px;
+.second-header {
+    height: 20px;
+    background-color: white;
+}
+
+.second-header a {
+    display: none;
 }
 
 .news{
@@ -67,6 +75,7 @@ padding:7px;
 
 .calendar_image_wrapper {
         display: flex;
+        flex-direction: column;
         padding-right: 15px;
         padding-left: 15px;
     }
@@ -74,6 +83,26 @@ padding:7px;
 .calendar_image{
     width: 100%;
     height: 163px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.ajapnyak-branch-opening{
+    text-decoration: none;
+    font-weight: 600;
+    color:#333; 
+}
+
+.ajapnyak-branch-opening div{
+    margin-left: 15px;
+}
+
+.ajapnyak-branch-opening-image{
+    width: 100%;
+    height: 163px;
+    margin-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
     object-fit: cover;
     object-position: top;
 }
@@ -91,27 +120,33 @@ padding:7px;
     text-align:start;
     font-family:"Segoe UI Semibold";
     margin:10px;
+    margin-bottom: 0px;
+    margin-left:0px;
     font-size:inherit;
 }
 
 .shareholders_meeting_text{
     text-align:start;
     font-family:"Segoe UI Semibold";
-    margin:10px;
     font-size:inherit;
+    text-decoration: none;
+    color: #333;
 }
 
-.shareholders_meeting_link{
-    text-decoration: none;
-    color: black;
+.shareholders_meeting_text div{
+    margin-left: 15px;
+    margin-top: 5px;
 }
-.all_news_text{
+
+.all-news-text{
     text-align:center;
     font-family:"Segoe UI Semibold";
     color: #626161;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-.all_news_link{
+.all-news-link{
     text-decoration: none;
 }
 
@@ -598,8 +633,6 @@ padding:7px;
     text-align: center;
 }
 
-
-
 .search-logo {
     width: 18px;
     height: 18px;
@@ -625,29 +658,13 @@ padding:7px;
 , rgba(255,255,255,1) 0%, rgba(255,255,255,1) 79%, rgba(76,75,75,1) 100%);
 }
 
-.social a {
-      padding: 10px;
-      text-align:center;
-}
-
-.phone-number {
-  font-size: 1.2rem;
-}
-
 .full-day {
       position: relative;
       bottom: 10px;
 }
 
-.second-header {
-      box-sizing:1rem;
-      background-color: white;
-      font-size: 1.3rem;
-}
-
-.second-header a {
-    text-decoration:none;
-    color:#333;
+.search-logo{
+    transform: scale(2);
 }
 
 .main-menue{
@@ -660,10 +677,6 @@ padding:7px;
     vertical-align: middle;
     max-width: 360px;
 }
-
-/* .deposit-calculator input {
-    background-color: 
-} */
 
 .footer{
     display: flex;
@@ -687,26 +700,25 @@ padding:7px;
 .first-footer{
   background-color:#0F1923; 
   text-align: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .first-footer svg{
     margin: 15px;
+    /* position: relative; */
 }
 
-.first-footer-svg-after{
-    position:absolute;
-    bottom:15px;
-    left: 127px;
-}
 
-.first-footer-svg-after:after{
+.first-footer-AEB-logo__type-svg:after{
     content: "";
     background-color: #81c31a;
     display: block;
     height: 3px;
     width: 105px;
-    margin-top: 7px;
+    /* margin-top: 7px; */
+    /* position: absolute; */
+    /* top: 10px;
+    left: 10px; */
 }
 
 .first-footer a, .first-footer{
@@ -743,10 +755,6 @@ padding:7px;
 .abcfinance-img{
     width: 40px;
 }
-
-/* .second-footer__links-text{
-    font-size: 10px;
-} */
 
 .useful-references{
     display: grid;
@@ -787,3 +795,665 @@ padding:7px;
     margin-top: 15px;
 }
 
+.about-bank{
+    display: none;
+}
+
+.individuals-header{
+    display: none;
+}
+
+.business-header{
+    display: none;  
+}
+
+.online-applications-transactions{
+    display:none;       
+}
+
+.social-left-part {
+    display: none;
+}
+
+.points-fake-image{
+    display: none;
+}
+
+.all-news{
+    display: none;
+}
+
+.pre-footer{
+    display:none;
+}
+
+.first-footer-top-left-block{
+    display: none;
+}
+
+.first-footer-top-right-block{
+    display: none;
+}
+
+.first-footer-bottom-left-block{
+    display: none;
+}
+
+.first-footer-AEB-logo-social{
+    display: none;
+}
+
+.zoomgraphics-svg__type-link{
+    display: none;
+}
+
+
+@media screen and (min-width: 768px){
+
+    .hamburger-logo{
+        display: none;
+    }
+
+    .aeb-logo{
+        width: 102px;
+        height: 40px;
+    }
+
+    .first-header{
+        display: flex;
+        height: 78px;
+    }
+
+    .about-bank{
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        color: white;
+        background-color: #004785;
+        border: none;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .individuals-header{
+        display: inline-block;
+        font-weight: 700;
+        position: relative;
+        margin-right: 40px;
+    }
+
+    .individuals-header::after{
+        content: "";
+        border: solid white;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 4px;
+        transform: rotate(
+    45deg
+    );
+        -webkit-transform: rotate(
+    45deg
+    );
+        position: absolute;
+        right: -21px;
+        top: 3px;
+    }
+
+    .business-header{
+        display: inline-block;
+        font-weight: 700;
+        position: relative;
+        margin-right: 20px;       
+    }
+
+    .business-header::after{
+        content: "";
+        border: solid white;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 4px;
+        transform: rotate(
+    45deg
+    );
+        -webkit-transform: rotate(
+    45deg
+    );
+        position: absolute;
+        right: -21px;
+        top: 3px;
+    }
+
+    .online-applications-transactions{
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        color: white;
+        background-color: #004785;
+        border: none;
+        margin-left: 30px;
+    }   
+
+    .social{
+        display: flex;
+    }
+
+   
+  .first-header{
+      display: flex;
+      flex-direction: row;
+  }
+
+  .header-menue{
+      justify-content: left;
+  }
+
+  .social-left-part{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+  }
+
+  .facebook-logo{
+      fill: #b3c8db;
+      margin-right: 10px;
+  }
+
+  .linkedin-logo{
+      fill: #b3c8db;
+      margin-right: 10px;
+  }
+
+  .instagram-logo{
+    fill: #b3c8db;
+    margin-right: 10px;
+    margin-bottom: -2px;
+  }
+
+  .youtube-logo{
+    fill: #b3c8db;
+    margin-right: 10px;
+  }
+
+.youtube-ad__iframe{
+    height: 428px;
+}
+
+.phone-number-logo{
+      margin-right: 5px;
+  }
+
+.social-phone-number{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    width: 110px;
+    height: 45px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.social-phone-number::before{
+    content: "24/7";
+    color:#81c31a;
+    font-size: 12px;
+    position: absolute;
+    top: -1px;
+    left: 97px
+}
+
+.second-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 49px;
+    padding-left: 14px;
+    padding-right: 100px;
+    font-size: 18px;
+    background-color: white;    
+}
+
+.second-header a {
+    display:inline-flex;
+    text-decoration:none;
+    color:#333;
+}
+
+.news-block{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.news{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.all-news{
+    display: inline-block;
+    color:#000;
+    text-decoration: none;
+}
+
+.all_news_link{
+    display: none;
+}
+
+.group-of-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.people_gadering_image{
+    margin-top: 0px;
+}
+
+.branch_list{
+    margin-left: 0px;
+}
+
+.shareholders_meeting_text div{
+   margin-top: 10px;
+}
+
+.ajapnyak-branch-opening div{
+    font-weight: 600;
+    color: black;
+}
+
+.deposit-calculator__header{
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    /* font-weight: 600; */
+}
+
+.deposit-calculator-form__type{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+}
+
+.deposit-calculator-form__type-label{
+    line-height: 2.8;
+    margin-right: 40px;
+}
+
+
+
+.deposit-calculator-form__type::after{
+    /* content: "";
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(
+45deg
+);
+    -webkit-transform: rotate(
+45deg
+);
+    position: absolute;
+    right: 15px; */
+    top: 17px;
+}
+
+.deposit-currency-form__type{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.deposit-currency-form__type-label{
+    line-height: 2.8;
+    margin-right: 40px;
+}
+
+.deposit-term__type{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.deposit-term__type-label{
+    line-height: 2.8;
+    margin-right: 40px; 
+}
+
+.deposit-payment__type{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.deposit-payment__type-label{
+    line-height: 2.8;
+    margin-right: 40px; 
+}
+
+.deposit-interest-rate__type{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.deposit-interest-rate__type-label{
+    line-height: 2.8;
+    margin-right: 40px;
+}
+
+.loan-calculator-header{
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    /* font-weight: 600;*/
+}
+
+.loan-type__type{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.loan-type__type-label{
+    line-height: 2.8;
+    margin-right: 40px; 
+}
+
+.loan-calculator-amount__type{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.loan-calculator-amount__type-label{
+    line-height: 2.8;
+    margin-right: 40px; 
+}
+
+.loan-calculator-term__type-fieldset{
+    display: flex;
+    flex-direction: row;
+    line-height: 2.8;
+}
+
+.loan-calculator-term__type-fieldset{
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.loan-calculator-term__type{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    line-height: 2.8;
+    
+}
+
+.loan-term-period__type-input{
+    margin-bottom: 0px;
+}
+
+.loan-term-day__type-label, .loan-term-month__type-label{
+    line-height: 2.8;
+    margin-bottom: 0;
+    margin-left: 3px;
+    margin-right: 30px;
+}
+
+.loan-term-year__type-label{
+    line-height: 2.8;
+    margin-bottom: 0;
+    margin-left: 3px;
+    margin-right: 40%;
+}
+
+.loan-calculator-term__type-label{
+    line-height: 2.8;
+    margin-right: 40px;
+}
+
+.loan-rate__type{
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+}
+
+.loan-rate__type-label{
+    line-height: 2.8;
+    margin-right: 40px;
+}
+
+.redemption-type__type{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.redemption-type__type-label{
+    line-height: 2.8;
+    margin-right: 40px;
+}
+
+.exchange-rate-background{
+    background-color: #f3f3f3;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    
+}
+
+.exchange-rate{
+    background-color: white;
+}
+
+.exchange-rate__header{
+    font-size: 21px;
+    margin-left: 20px;
+    /* font-weight: 400; */
+}
+
+.exchange-rate__header::after{
+    height: 5px;
+    width: 51px;
+    margin-top: 8px;
+}
+
+.exchange-rate__options{
+    font-size: 17px;
+    border-bottom: none;
+}
+
+.exchange-rate__table-header{
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: solid #dfdfdf 1px;
+    padding-bottom: 16px;
+}
+
+.exchange-rate__table{
+    margin-left: 30px;
+    font-size: 14px;  
+}
+
+.exchange-rate-currency__first-column{
+    padding-top: 10px;
+    padding-right: 0px;
+}
+
+.google-map-object-selector-div{
+    background-color: #f3f3f3;
+    display: flex;
+    margin-left: 25px;
+}
+
+.google-map-object-selector{
+    background-color: #f3f3f3;
+    padding-left:15px;
+}
+
+.google-map-updated-day{
+    font-size: 15px;
+    text-align: end;
+    line-height: 2.8;
+}
+
+.pre-footer{
+    display: flex;
+    background-color: #f3f3f3;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-weight: 600;
+}
+
+.pre-footer a{
+    padding-right: 30px;
+}
+
+.first-footer-AEB-logo__type-svg::after{
+    content: "";
+    background-color: #81c31a;
+    display: block;
+    height: 3px;
+    width: 105px;
+}
+
+.first-footer-AEB-logo__type-svg{
+    padding-top: 35px;
+    transform: scale(0.7);
+    height: auto;
+}
+
+.first-footer{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.first-footer-top-left-block{
+    font-size: 14px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-column: 2 / 6;
+}
+
+.first-footer-top-left-block a{
+    margin-bottom: 7px;
+}
+
+.first-footer-top-right-block{
+    font-size: 14px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    grid-column: 8 / 12;
+}
+
+.first-footer-top-right-block-images{
+    width: 16px;
+    margin-right: 5px;
+}
+
+.first-footer-top-right-block div{
+    margin-bottom: 15px;
+}
+
+.first-footer-bottom-left-block{
+    font-size: 14px;
+    margin-top: 50px;
+    display: flex;
+    width:100%;
+    height: 150px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    grid-column: 2 / 11;
+    grid-row: 5 / 8;  
+}
+
+.first-footer-bottom-left-block img{
+    margin-right: 20px;
+}
+
+.first-footer-bottom-left-block a{
+    margin-right: 15%;
+    margin-bottom: 10px;
+}
+
+.find-us-social{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.first-footer-AEB-logo-social__type-div{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    width:20px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.first-footer-AEB-logo-social__type-div a{
+    padding-right: 15px;
+}
+
+.second-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding-left: 19vw;
+    margin-bottom: 30px;
+}
+
+.second-footer__links{
+    margin-left: 0%;
+}
+
+.useful-references{
+    margin-left: 0px;
+}
+
+.second-footer__links h3{
+    align-self: flex-start;
+}
+
+.last-text{
+    font-size: 14px;
+    text-align: start;
+    margin-left:0px;
+}
+
+.zoomgraphics-svg__type-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+} 
+
+.copyright{
+    width:65%;
+    text-align: end;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.armeconombank-supervised{
+    font-size: 14px;
+    align-self: flex-end;
+    padding-right: 130px;
+    margin-bottom: 61px;
+    margin-top: 35px;
+}
+
+}
